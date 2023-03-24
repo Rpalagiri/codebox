@@ -1,0 +1,15 @@
+
+input = input("enter a value:")
+
+try:
+    val = int(input)
+    for i in range(val, val + 101):
+     print(i, end=' ')
+
+except ValueError:
+    try:
+        val = float(input)
+        print("We can not write down natural numbers as the input is FLOAT")
+    except ValueError:
+        print("We can not write down natural numbers as the input is STRING")
+
